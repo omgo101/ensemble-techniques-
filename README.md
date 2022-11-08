@@ -6,7 +6,7 @@ ensemble means combinig multiple models when we assemble different algorithm and
 other in parallel and combines them tollowing some kind ot deterministic averagıng process <br />
 **Boosting:** that often considers homogeneous weak learners, learns them sequentially in a very
 adaptative way (a base model depends on the previous ones) and combines them following a
-deterministic strategy <br />
+deterministic strategy in boosting we have techique such as adaboost, gradien6t boosting,xgboost<br />
 **Stacking:** that often considers heterogeneous weak learners, learns them in parallel and combınes
 them by training a meta-model to output a prediction based on the different weak models predictions <br /> <br />
 **Bagging**

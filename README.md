@@ -15,3 +15,15 @@ before going to bagging we will take an example suppose we have multiple model a
 lastly the model will give results and here we will use **voting classifier** it means whoever got the majority vote will win <br />
 ![image](https://user-images.githubusercontent.com/79073189/200340459-48515b5a-00d1-47a3-8fcc-acea145d35c4.png) <br />
 but you will why we  call this bagging as boostrap agrregation because as you see the dataset get split and then its combine and give results <br />
+1. Initialise the dataset and assign equal weight to each of the data point.<br />
+2. Provide this as input to the model and identify the wrongly classified data points.<br />
+3. Increase the weight of the wrongly classified data points.<br />
+4. if (got required results) <br />
+  Goto step 5 <br />
+else <br />
+  Goto step 2 <br />
+1. Bagging is a parallel learner process vs boosting is sequential.<br />
+2. Boosting is iterative vs bagging doesn't have to be.<br />
+3. Boosting can increase over-fitting whereas bagging generally decreases boosting.<br />
+Ensemble learning works well when different models make independent mistakes i.e. when different models make mistakes on different examples.<br />
+

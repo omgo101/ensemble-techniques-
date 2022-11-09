@@ -22,8 +22,8 @@ but you will why we  call this bagging as boostrap agrregation because as you se
   Goto step 5 <br />
 else <br />
   Goto step 2 <br />
-1. Bagging is a parallel learner process vs boosting is sequential.<br />
-2. Boosting is iterative vs bagging doesn't have to be.<br />
-3. Boosting can increase over-fitting whereas bagging generally decreases boosting.<br />
+Bagging is a parallel learner process vs boosting is sequential.<br />
+Boosting is iterative vs bagging doesn't have to be.<br />
+Boosting can increase over-fitting whereas bagging generally decreases boosting.<br />
 Ensemble learning works well when different models make independent mistakes i.e. when different models make mistakes on different examples.<br />
 

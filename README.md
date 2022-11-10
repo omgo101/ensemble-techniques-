@@ -17,15 +17,20 @@ lastly the model will give results and here we will use **voting classifier** it
 but you will why we  call this bagging as boostrap agrregation because as you see the dataset get split and then its combine and give results <br />
 **Boosting** <br />
 its a sequential technique <br />
-1. Initialise the dataset and assign equal weight to each of the data point.<br />
-2. Provide this as input(randomly sample) to the model and identify the wrongly classified data points.<br />
-3. Increase the weight of the wrongly classified data points.<br />
+**1**. Initialise the dataset and assign equal weight to each of the data point.<br />
+**2**. Provide this as input(randomly sample) to the model and identify the wrongly classified data points.(its not neccessary that model always be classified correctly)<br />
+**3**. Increase the weight of the wrongly classified data points. this is because those datapoint whose weights are high will be select in next round of model(probability will be high)<br />
 ![image](https://user-images.githubusercontent.com/79073189/201016905-9c5efc7c-f9a0-461f-9f1a-a88bf468e7d6.png)
-
-5. if (got required results) <br />
-  Goto step 5 <br />
+**4**. model 2 will clssify those who got wrong will get higher weights and the cycle contineous till Mn(model n)<br />
+**5**. if (got required results) <br />
+  Goto step 6 <br />
 else <br />
   Goto step 2 <br />
+**6**now give the input from the test data for all model(earlier we where performing the operation on training data)now classify it 
+**7** now we use  **voting classifier** it means whoever got the majority vote will win <br />
+![image](https://user-images.githubusercontent.com/79073189/201019881-97223c25-7174-4d77-b484-f647e46f212b.png)
+
+differnce between **bagging and boosting** <br />
 Bagging is a parallel learner process vs boosting is sequential.<br />
 Boosting is iterative vs bagging doesn't have to be.<br />
 Boosting can increase over-fitting whereas bagging generally decreases boosting.<br />

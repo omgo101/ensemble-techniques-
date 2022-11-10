@@ -15,6 +15,7 @@ before going to bagging we will take an example suppose we have multiple model a
 lastly the model will give results and here we will use **voting classifier** it means whoever got the majority vote will win <br />
 ![image](https://user-images.githubusercontent.com/79073189/200340459-48515b5a-00d1-47a3-8fcc-acea145d35c4.png) <br />
 but you will why we  call this bagging as boostrap agrregation because as you see the dataset get split and then its combine and give results <br />
+
 **Boosting** <br />
 its a sequential technique <br />
 **1**. Initialise the dataset and assign equal weight to each of the data point.<br />
@@ -35,4 +36,12 @@ Bagging is a parallel learner process vs boosting is sequential.<br />
 Boosting is iterative vs bagging doesn't have to be.<br />
 Boosting can increase over-fitting whereas bagging generally decreases boosting.<br />
 Ensemble learning works well when different models make independent mistakes i.e. when different models make mistakes on different examples.<br />
+### Adaboost
+before going to adaboost lets know about **stump** its contains only node and two leaves (not great for classification) <br />
+![image](https://user-images.githubusercontent.com/79073189/201112195-0dd82b7f-a800-43eb-b91d-9bb01e5a5467.png)
+in random forest all decision tree has equal important means there is no weight in that but not in forest for stumps in adaboost  <br />
+in random forest all decision tree are independent to each other inforest for stumps in adaboost should be in order the first stump is influence by other stumps is made and so on
+### Gradient Boost
+
+
 

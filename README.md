@@ -15,10 +15,14 @@ before going to bagging we will take an example suppose we have multiple model a
 lastly the model will give results and here we will use **voting classifier** it means whoever got the majority vote will win <br />
 ![image](https://user-images.githubusercontent.com/79073189/200340459-48515b5a-00d1-47a3-8fcc-acea145d35c4.png) <br />
 but you will why we  call this bagging as boostrap agrregation because as you see the dataset get split and then its combine and give results <br />
+**Boosting** <br />
+its a sequential technique <br />
 1. Initialise the dataset and assign equal weight to each of the data point.<br />
-2. Provide this as input to the model and identify the wrongly classified data points.<br />
+2. Provide this as input(randomly sample) to the model and identify the wrongly classified data points.<br />
 3. Increase the weight of the wrongly classified data points.<br />
-4. if (got required results) <br />
+![image](https://user-images.githubusercontent.com/79073189/201016905-9c5efc7c-f9a0-461f-9f1a-a88bf468e7d6.png)
+
+5. if (got required results) <br />
   Goto step 5 <br />
 else <br />
   Goto step 2 <br />

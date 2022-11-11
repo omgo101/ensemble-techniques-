@@ -63,6 +63,5 @@ here what we are trying is we are coming closer to the actual value
 lastly the final prediction value will loss like this <br /> 
 ![image](https://user-images.githubusercontent.com/79073189/201263080-904959e8-408b-49a9-9c7e-e6af227660ea.png) <br /> 
 here the base value is avg value
-
-
+#### XGBM,LGBM Light GBM, XGBOOST
 

@@ -52,8 +52,16 @@ lets say have this data where age and bmi are independent and height is dependen
 ![image](https://user-images.githubusercontent.com/79073189/201259862-99ddf90c-0f81-4246-9bc2-2bd6524eda94.png) <br />
 very 1 step boosting algorithm does is it will take average of the target column (height) initially the boosting algoritm assumes there is no learning model means 0 model so thus it will make column of predicted column and put the average height values in that <br />
 and next step is take out the actual predict and residual(actual-predicted) values <br />
-![image](https://user-images.githubusercontent.com/79073189/201260659-e28da893-c47d-436d-a829-91b330f0d94e.png)
-
+![image](https://user-images.githubusercontent.com/79073189/201260659-e28da893-c47d-436d-a829-91b330f0d94e.png) <br />
+so what happen in next column is instead of taking target variable as height  column we will take residual column as target column means dependent variable and now model will work on it model will fit on it <br />
+now how residual will look like is supppose we say we applied decision tree on it and it will predict values and we it in column as residual predicted  <br />
+before moving foward let understand what is **learning rate** <br /> 
+ the learning rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function. (at what change at what speed you want change the predicted value)<br />
+ now what happend in next step is it will add the predicted height value + (learning rate X predicted resiudual) and update the predicted height column  and obviously the residual column will also change so this is how iteration one get completed and the cycle gose on   <br />
+ ![image](https://user-images.githubusercontent.com/79073189/201262636-d08769bd-dfde-489f-9904-a9894f620d9f.png) <br /> 
+here what we are trying is we are coming closer to the actual value
+lastly the final prediction value will loss like this <br /> 
+![image](https://user-images.githubusercontent.com/79073189/201263080-904959e8-408b-49a9-9c7e-e6af227660ea.png) <br /> 
 
 
 

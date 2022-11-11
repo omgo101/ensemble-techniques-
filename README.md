@@ -47,3 +47,13 @@ lets understand the difference between adaboost and gradient boost  <br />
 optimizing the loss fuctions menas improving the ols(ordinary least square because we are trying to reduce ols value) ols become the loss function for gradient boost  <br />
 ![image](https://user-images.githubusercontent.com/79073189/201259498-09604140-9f62-441a-b8f3-57a95205e84b.png) <br />
 2)in adaboost has stumps but gradient boost has leaf nodes means greater trees <br />
+**now how gradient boost works** <br />
+lets say have this data where age and bmi are independent and height is dependent variable <br />
+![image](https://user-images.githubusercontent.com/79073189/201259862-99ddf90c-0f81-4246-9bc2-2bd6524eda94.png) <br />
+very 1 step boosting algorithm does is it will take average of the target column (height) initially the boosting algoritm assumes there is no learning model means 0 model so thus it will make column of predicted column and put the average height values in that <br />
+and next step is take out the actual predict and residual(actual-predicted) values <br />
+![image](https://user-images.githubusercontent.com/79073189/201260659-e28da893-c47d-436d-a829-91b330f0d94e.png)
+
+
+
+

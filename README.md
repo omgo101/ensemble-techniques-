@@ -42,6 +42,7 @@ before going to adaboost lets know about **stump** its contains only node and tw
 in random forest all decision tree has equal important means there is no weight in that but not in forest for stumps in adaboost  <br />
 in random forest all decision tree are independent to each other inforest for stumps in adaboost should be in order the first stump is influence by other stumps is made and so on
 ### Gradient Boost
-
-
+lets understand the difference between adaboost and gradient boost  
+1)in adaboost weights are increase means updated but in gradient boost optimizing the loss fuction 
+2)in adaboost has stumps but gradient boost has leaf nodes means greater trees
 

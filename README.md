@@ -78,6 +78,10 @@ xgboost is mainly built for largly complicated dataset  <br />
 **xgboost regression**
 to start with we have to built xgboost tree(which is unique regression tree that  which uses by xgboost)(there are many ways to build xgboost tree but we are taking ones most  common xgboost tree) <br />
 each tree will start with single leaf and all the residuals will go the leaf now we should calculate similarity scores = sum of the residuals squared  / number of residuals + lamda(lamda is regularization parameter)    <br /> 
-after calculating similarity scores  contineu growing the tree by taking the condition split of lowest values in the graph 
+after calculating similarity scores  contineu growing the tree by taking the condition split of lowest values in the graph   <br /> 
 ![image](https://user-images.githubusercontent.com/79073189/204083251-d99f0b9b-9008-4fe3-b0c0-8eb50161823d.png)
+now calculate the similarity scores for other two leaf for just example like this  <br /> 
+![image](https://user-images.githubusercontent.com/79073189/204083366-05fedfc3-b453-4239-a9d7-7e44ae6bcfd0.png)
+but how we can know if it is building better leaves cluster that the root(means what should we take the threshold  value for the root leaves) to know this we will use **gain**  which formula is left(similarity)+right(similarity)-root(similarity)
+now we to this process by shifting the threshold values by its data and do this all process and take out the gain vaules lastly after you reach last treshold value stop the process and comparre the gain value with others and whoever got the highest value will win(for to condition split leaves in root)
 

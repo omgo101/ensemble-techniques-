@@ -67,4 +67,4 @@ here the base value is avg value
 **XGBOOST**(extreme gradient boosting) **by tanqi chen**
 xgboost is gain popularity for two main reason 1) faster processing  speed 2)accurate results performance is really good 
 we can say xgboost is **advance version of gradient boosting**
-
+why its really faster because of paralelization ,cache optimization ,out of memory computation and for performance is regularization (prevent from  overfiting and underfiting ),auto pruning (it means it will not allow tree to go beyond the certain level thus the model will not be baised),missing value handling 

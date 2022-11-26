@@ -1,6 +1,8 @@
-eeeeeee# ensemble-techniques-
+# ensemble-techniques-
 all  ensemble techniques  <br />
 ensemble means combinig multiple models when we assemble different algorithm and combine into one so we are gonna call it **ensemble techinques** Ensemble methods are techniques that aim at improving the accuracy of results in models by combining multiple models instead of using a single model.<br /> 
+ #### When to use Ensemble Learning?
+Since Ensemble learning results in better accuracy, high consistency and also helps to avoid bias variance tradeoff should'nt we use it everywhere? The short answer is it depends on the problem in hand. If our model with available training data is not performing well and showing the signs of overfitting/unterfitting and additinal compute power is not an issue then going for Ensemble Learning is best option. However one shouldnt skip the first steps of improving the input data and trying different hyperparmeters before going for ensemple approach.
 ![image](https://user-images.githubusercontent.com/79073189/204076770-c44c517b-e59f-41e7-9b2c-fd8dbac2a8ed.png)
 
 **suppose** if we take decision tree models if we slietly change the data the whole decision model will change for so for this situation we will use **bagging and boosting** baaging it has another word called bootstarping(these are the evaluation methods that we can use out cross valiudation and hold out method)<br />

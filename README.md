@@ -86,6 +86,8 @@ but how we can know if it is building better leaves cluster that the root(means 
 now we to this process by shifting the threshold values by its data and do this all process and take out the gain vaules lastly after you reach last treshold value stop the process and comparre the gain value with others and whoever got the highest value will win(for to condition split leaves in root)
 now do this process for further leaves <br /> 
 ![image](https://user-images.githubusercontent.com/79073189/204083959-f6fb3a1c-71ed-4083-b664-19debb153e7e.png)  <br /> 
+![image](https://user-images.githubusercontent.com/79073189/204085497-fb48f3c2-b24a-45c8-9e3b-30d7f47be73b.png)<br /> 
+
 now we have to prune the tree we will prune the tree based on the gain value we start with picking a random average number this  random average number we call it **gemma** now we go the lowest branch of the tree and apply this formula gain- gemma (those who will get the negative value will remove the branch and positive will not remove the branch and done pruning)
 remember lambda we use while calculating similarity score there is rule for lambda which is when lambda is > 0 the similarity score,gain  become smaller (note dont put the gemma value as 0)
 now we will take out the **output value** for each leafs formula output values =sum od residuals /number of residuals +lambda  <br /> 
@@ -94,6 +96,8 @@ just like we build our first tree so now we make new prediction nd just like une
 Boost, XGBoost makes new
 predictions by starting with the initial
 Prediction and adding the output of the Tree,
-scaled by a Learning Rate.
+scaled by a Learning Rate X output values 
 ![image](https://user-images.githubusercontent.com/79073189/204085144-622701e5-acbc-43aa-b33c-d1198d7def76.png)
-
+xgboost calls learning rate as eta and the default value is 0.3 and we will put the value and take out the new prediction to check the prediction is effective or not we will put training data and will see in graph the you will the predicted value annd actual value are closer  but not the accurate so put the vaules as residuals line 
+![image](https://user-images.githubusercontent.com/79073189/204085423-31024811-f942-403b-b003-520d4382a73c.png)
+and build the tree based on the newest residuals until  you have reach the smallest number of residuals 

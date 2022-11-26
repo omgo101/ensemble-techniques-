@@ -13,6 +13,8 @@ deterministic strategy in boosting we have techique such as adaboost, gradien6t 
 
 **Stacking:** that often considers heterogeneous weak learners, learns them in parallel and combınes
 them by training a meta-model to output a prediction based on the different weak models predictions <br /> <br />
+![image](https://user-images.githubusercontent.com/79073189/204089997-7067fe78-4d78-4f88-bc0b-b8ac1cf68848.png)
+<br />
 **Bagging**
 before going to bagging we will take an example suppose we have multiple model and one dataset so what we will do we take an sample from the dataset and feed to model1 and resample(every time should be different sample) the dataset and feed to model2 and so on till modelN so this process called as **row sampling with replacement** <br />
 ![image](https://user-images.githubusercontent.com/79073189/200339517-f12732b4-c746-4877-8fa3-19803737abb8.png) <br />

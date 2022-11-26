@@ -1,4 +1,4 @@
-# ensemble-techniques-
+eeeeeee# ensemble-techniques-
 all  ensemble techniques  <br />
 ensemble means combinig multiple models when we assemble different algorithm and combine into one so we are gonna call it **ensemble techinques** Ensemble methods are techniques that aim at improving the accuracy of results in models by combining multiple models instead of using a single model.<br /> 
 ![image](https://user-images.githubusercontent.com/79073189/204076770-c44c517b-e59f-41e7-9b2c-fd8dbac2a8ed.png)

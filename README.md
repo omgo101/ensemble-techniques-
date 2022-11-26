@@ -88,6 +88,12 @@ now do this process for further leaves <br />
 ![image](https://user-images.githubusercontent.com/79073189/204083959-f6fb3a1c-71ed-4083-b664-19debb153e7e.png)  <br /> 
 now we have to prune the tree we will prune the tree based on the gain value we start with picking a random average number this  random average number we call it **gemma** now we go the lowest branch of the tree and apply this formula gain- gemma (those who will get the negative value will remove the branch and positive will not remove the branch and done pruning)
 remember lambda we use while calculating similarity score there is rule for lambda which is when lambda is > 0 the similarity score,gain  become smaller (note dont put the gemma value as 0)
-now we will take out the **output value** for each leafs formula output values =sum od residuals /number of residuals +lambda  
-![image](https://user-images.githubusercontent.com/79073189/204084934-5f0bbcfc-6b72-4430-8b2c-0ed5911704f7.png)
+now we will take out the **output value** for each leafs formula output values =sum od residuals /number of residuals +lambda  <br /> 
+![image](https://user-images.githubusercontent.com/79073189/204084934-5f0bbcfc-6b72-4430-8b2c-0ed5911704f7.png) <br /> 
+just like we build our first tree so now we make new prediction nd just like unextreme Gradient
+Boost, XGBoost makes new
+predictions by starting with the initial
+Prediction and adding the output of the Tree,
+scaled by a Learning Rate.
+![image](https://user-images.githubusercontent.com/79073189/204085144-622701e5-acbc-43aa-b33c-d1198d7def76.png)
 

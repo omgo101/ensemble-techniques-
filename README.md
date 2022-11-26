@@ -9,6 +9,8 @@ other in parallel and combines them tollowing some kind ot deterministic averagÄ
 **Boosting:** that often considers homogeneous weak learners, learns them sequentially in a very
 adaptative way (a base model depends on the previous ones) and combines them following a
 deterministic strategy in boosting we have techique such as adaboost, gradien6t boosting,xgboost<br />
+![image](https://user-images.githubusercontent.com/79073189/204089942-2806ccf0-9d1c-45f5-9aba-210be0dac855.png) <br />
+
 **Stacking:** that often considers heterogeneous weak learners, learns them in parallel and combÄ±nes
 them by training a meta-model to output a prediction based on the different weak models predictions <br /> <br />
 **Bagging**

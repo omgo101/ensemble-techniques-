@@ -76,4 +76,8 @@ xgboost dose two things  <br />
 2)xgboost classification <br /> 
 xgboost is mainly built for largly complicated dataset  <br /> 
 **xgboost regression**
-to start with we have to built xgboost tree(which is unique regression tree that  which uses by xgboost)(there are many ways to build xgboost tree but we are taking ones most  common xgboost tree)
+to start with we have to built xgboost tree(which is unique regression tree that  which uses by xgboost)(there are many ways to build xgboost tree but we are taking ones most  common xgboost tree) <br />
+each tree will start with single leaf and all the residuals will go the leaf now we should calculate similarity scores = sum of the residuals squared  / number of residuals + lamda(lamda is regularization parameter)    <br /> 
+after calculating similarity scores  contineu growing the tree by taking the condition split of lowest values in the graph 
+![image](https://user-images.githubusercontent.com/79073189/204083251-d99f0b9b-9008-4fe3-b0c0-8eb50161823d.png)
+

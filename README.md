@@ -81,9 +81,10 @@ each tree will start with single leaf and all the residuals will go the leaf now
 after calculating similarity scores  contineu growing the tree by taking the condition split of lowest values in the graph   <br /> 
 ![image](https://user-images.githubusercontent.com/79073189/204083251-d99f0b9b-9008-4fe3-b0c0-8eb50161823d.png)
 now calculate the similarity scores for other two leaf for just example like this  <br /> 
-![image](https://user-images.githubusercontent.com/79073189/204083366-05fedfc3-b453-4239-a9d7-7e44ae6bcfd0.png)
+![image](https://user-images.githubusercontent.com/79073189/204083366-05fedfc3-b453-4239-a9d7-7e44ae6bcfd0.png)   <br /> 
 but how we can know if it is building better leaves cluster that the root(means what should we take the threshold  value for the root leaves) to know this we will use **gain**  which formula is left(similarity)+right(similarity)-root(similarity)
 now we to this process by shifting the threshold values by its data and do this all process and take out the gain vaules lastly after you reach last treshold value stop the process and comparre the gain value with others and whoever got the highest value will win(for to condition split leaves in root)
 now do this process for further leaves <br /> 
-![image](https://user-images.githubusercontent.com/79073189/204083959-f6fb3a1c-71ed-4083-b664-19debb153e7e.png)
+![image](https://user-images.githubusercontent.com/79073189/204083959-f6fb3a1c-71ed-4083-b664-19debb153e7e.png)  <br /> 
+now we have to prune the tree we will prune the tree based on the gain value we start with picking a random average number this  random average number we call it **gemma** now we go the lowest branch of the tree and apply this formula gain- gemma (those who will get the negative value will remove the branch and positive will not remove the branch and done pruning)
 

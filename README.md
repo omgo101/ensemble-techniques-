@@ -84,4 +84,6 @@ now calculate the similarity scores for other two leaf for just example like thi
 ![image](https://user-images.githubusercontent.com/79073189/204083366-05fedfc3-b453-4239-a9d7-7e44ae6bcfd0.png)
 but how we can know if it is building better leaves cluster that the root(means what should we take the threshold  value for the root leaves) to know this we will use **gain**  which formula is left(similarity)+right(similarity)-root(similarity)
 now we to this process by shifting the threshold values by its data and do this all process and take out the gain vaules lastly after you reach last treshold value stop the process and comparre the gain value with others and whoever got the highest value will win(for to condition split leaves in root)
+now do this process for further leaves <br /> 
+![image](https://user-images.githubusercontent.com/79073189/204083959-f6fb3a1c-71ed-4083-b664-19debb153e7e.png)
 

@@ -1,6 +1,6 @@
 # ensemble-techniques-
 all  ensemble techniques  <br />
-ensemble means combinig multiple models when we assemble different algorithm and combine into one so we are gonna call it **ensemble techinques** Ensemble methods are techniques that aim at improving the accuracy of results in models by combining multiple models instead of using a single model.<br />
+ensemble means combinig multiple models when we assemble different algorithm and combine into one so we are gonna call it **ensemble techinques** Ensemble methods are techniques that aim at improving the accuracy of results in models by combining multiple models instead of using a single model.<br /> 
 ![image](https://user-images.githubusercontent.com/79073189/204076770-c44c517b-e59f-41e7-9b2c-fd8dbac2a8ed.png)
 
 **suppose** if we take decision tree models if we slietly change the data the whole decision model will change for so for this situation we will use **bagging and boosting** baaging it has another word called bootstarping(these are the evaluation methods that we can use out cross valiudation and hold out method)<br />
@@ -92,12 +92,12 @@ now we have to prune the tree we will prune the tree based on the gain value we 
 remember lambda we use while calculating similarity score there is rule for lambda which is when lambda is > 0 the similarity score,gain  become smaller (note dont put the gemma value as 0)
 now we will take out the **output value** for each leafs formula output values =sum od residuals /number of residuals +lambda  <br /> 
 ![image](https://user-images.githubusercontent.com/79073189/204084934-5f0bbcfc-6b72-4430-8b2c-0ed5911704f7.png) <br /> 
-just like we build our first tree so now we make new prediction nd just like unextreme Gradient
+<br /> just like we build our first tree so now we make new prediction nd just like unextreme Gradient
 Boost, XGBoost makes new
 predictions by starting with the initial
 Prediction and adding the output of the Tree,
-scaled by a Learning Rate X output values 
-![image](https://user-images.githubusercontent.com/79073189/204085144-622701e5-acbc-43aa-b33c-d1198d7def76.png)
-xgboost calls learning rate as eta and the default value is 0.3 and we will put the value and take out the new prediction to check the prediction is effective or not we will put training data and will see in graph the you will the predicted value annd actual value are closer  but not the accurate so put the vaules as residuals line 
-![image](https://user-images.githubusercontent.com/79073189/204085423-31024811-f942-403b-b003-520d4382a73c.png)
+scaled by a Learning Rate X output values <br />
+![image](https://user-images.githubusercontent.com/79073189/204085144-622701e5-acbc-43aa-b33c-d1198d7def76.png) <br />
+xgboost calls learning rate as eta and the default value is 0.3 and we will put the value and take out the new prediction to check the prediction is effective or not we will put training data and will see in graph the you will the predicted value annd actual value are closer  but not the accurate so put the vaules as residuals line <br />
+![image](https://user-images.githubusercontent.com/79073189/204085423-31024811-f942-403b-b003-520d4382a73c.png) <br />
 and build the tree based on the newest residuals until  you have reach the smallest number of residuals 

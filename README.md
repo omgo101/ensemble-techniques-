@@ -67,8 +67,13 @@ lastly the final prediction value will loss like this <br />
 here the base value is avg value
 #### XGBM,LGBM Light GBM, XGBOOST
 **XGBOOST**(extreme gradient boosting) **by tanqi chen**
-xgboost is gain popularity for two main reason 1) faster processing  speed 2)accurate results performance is really good 
-we can say xgboost is **advance version of gradient boosting**
-why its really faster because of paralelization ,cache optimization ,out of memory computation and for performance is regularization (prevent from  overfiting and underfiting ),auto pruning (it means it will not allow tree to go beyond the certain level thus the model will not be baised),missing value handling 
-#### how it works 
-
+xgboost is gain popularity for two main reason 1) faster processing  speed 2)accurate results performance is really good  <br /> 
+we can say xgboost is **advance version of gradient boosting** <br /> 
+why its really faster because of paralelization ,cache optimization ,out of memory computation and for performance is regularization (prevent from  overfiting and underfiting ),auto pruning (it means it will not allow tree to go beyond the certain level thus the model will not be baised),missing value handling  <br /> 
+#### how it works   
+xgboost dose two things  <br /> 
+1)xgboost regression  <br /> 
+2)xgboost classification <br /> 
+xgboost is mainly built for largly complicated dataset  <br /> 
+**xgboost regression**
+to start with we have to built xgboost tree(which is unique regression tree that  which uses by xgboost)(there are many ways to build xgboost tree but we are taking ones most  common xgboost tree)

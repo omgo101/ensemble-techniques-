@@ -1,6 +1,8 @@
 # ensemble-techniques-
 all  ensemble techniques  <br />
 ensemble means combinig multiple models when we assemble different algorithm and combine into one so we are gonna call it **ensemble techinques** Ensemble methods are techniques that aim at improving the accuracy of results in models by combining multiple models instead of using a single model.<br />
+![image](https://user-images.githubusercontent.com/79073189/204076770-c44c517b-e59f-41e7-9b2c-fd8dbac2a8ed.png)
+
 **suppose** if we take decision tree models if we slietly change the data the whole decision model will change for so for this situation we will use **bagging and boosting** baaging it has another word called bootstarping(these are the evaluation methods that we can use out cross valiudation and hold out method)<br />
 **Bagging(aka boostrap aggregation):** that otten considers homogeneous weak learners, learns them independently from each and one of the techinque in bagging is called as **random forest**
 other in parallel and combines them tollowing some kind ot deterministic averagıng process <br />
@@ -68,3 +70,5 @@ here the base value is avg value
 xgboost is gain popularity for two main reason 1) faster processing  speed 2)accurate results performance is really good 
 we can say xgboost is **advance version of gradient boosting**
 why its really faster because of paralelization ,cache optimization ,out of memory computation and for performance is regularization (prevent from  overfiting and underfiting ),auto pruning (it means it will not allow tree to go beyond the certain level thus the model will not be baised),missing value handling 
+#### how it works 
+

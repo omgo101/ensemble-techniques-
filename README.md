@@ -114,7 +114,9 @@ and build the tree based on the newest residuals until  you have reach the small
 ![image](https://user-images.githubusercontent.com/79073189/204122822-3c03b137-e69c-434e-9824-d51dbc67b10a.png) <br />
 (sum of the residual)squared / sum (previously predicted probability X (1-previous probability)+lambda(for regularization) <br />
 3)and whoever got the highest gain value will win <br />
-4)for pruning in classication we use something called **cover** and the formula is cover=sum (previously predicted probability X (1-previous probability) <br />
-![image](https://user-images.githubusercontent.com/79073189/204123390-452f3981-15c3-4fce-85e9-523bb8b69fcc.png) <br /> and then you have to give threshold value for cover so anything go beyond that should revome that leaf and put all the values in root  so the cover default value is 1 
-
+4)for pruning in classication The minimum number of Residuals in each leaf is determined by
+calculating something called **cover** and the formula is cover=sum (previously predicted probability X (1-previous probability) <br />
+![image](https://user-images.githubusercontent.com/79073189/204123390-452f3981-15c3-4fce-85e9-523bb8b69fcc.png) <br /> and then you have to give threshold value for cover so anything go beyond that should revome that leaf and put all the values in root  so the cover default value is 1  <br />
+5)now for pruning the tree we do by calculating the difference between the **gain** associated the lowest branch  <br />
+![image](https://user-images.githubusercontent.com/79073189/204141664-38c1aa70-84eb-47e1-9f31-42cc139cdda4.png) <br />
 

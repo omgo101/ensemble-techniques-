@@ -106,4 +106,10 @@ scaled by a Learning Rate X output values <br />
 ![image](https://user-images.githubusercontent.com/79073189/204085144-622701e5-acbc-43aa-b33c-d1198d7def76.png) <br />
 xgboost calls learning rate as eta and the default value is 0.3 and we will put the value and take out the new prediction to check the prediction is effective or not we will put training data and will see in graph the you will the predicted value annd actual value are closer  but not the accurate so put the vaules as residuals line <br />
 ![image](https://user-images.githubusercontent.com/79073189/204085423-31024811-f942-403b-b003-520d4382a73c.png) <br />
-and build the tree based on the newest residuals until  you have reach the smallest number of residuals 
+and build the tree based on the newest residuals until  you have reach the smallest number of residuals <br /> <br />
+**xgboost classification** <br />
+**how it  works** <br />
+1)we will build xgboost tree as normal based on similarity scores  <br />
+2)however since we are focusing on classification we will use difffernt similarity score formula <br />
+![image](https://user-images.githubusercontent.com/79073189/204122822-3c03b137-e69c-434e-9824-d51dbc67b10a.png) <br />
+(sum of the residual)squared / sum (previously predicted probability X (1-previous probability)+lambda(for regularization) <br />

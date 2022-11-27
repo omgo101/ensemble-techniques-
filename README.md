@@ -123,7 +123,11 @@ calculating something called **cover** and the formula is cover=sum (previously 
 ![image](https://user-images.githubusercontent.com/79073189/204141829-4715d874-c729-48a0-bd54-c9edb540ce02.png) <br />
 when lamda > 0  Thus, A (lambda), the Regularization Parame reduces the prediction sensitivity to isolated
 observations.<br />
-7)now use th output value for prediction value is average prediction +( learning rate X output value ) note :- if you have probability value then just change to log of the odds values 
-8)now whatever will be the outcome build that tree  and make tree until the residuals are smaller and smaller
+7)now use th output value for prediction value is average prediction +( learning rate X output value ) note :- if you have probability value then just change to log of the odds values <br />
+8)now whatever will be the outcome build that tree  and make tree until the residuals are smaller and smaller <br />
 #### Light gbm
-https://lightgbm.readthedocs.io/en/v3.3.2/
+https://lightgbm.readthedocs.io/en/v3.3.2/ <br />
+**why ligbm is faster** <br />
+1)its uses histogram clustering to create bins <br />
+2)exclusive feature bundling Exclusive feature bundling (EFB) is a near-lossless method to reduce the number of effective features. In a sparse feature space many features are nearly exclusive, implying they rarely take nonzero values simultaneously. <br />
+3)gradient based one side sumbling GOSS (Gradient Based One Side Sampling) is a novel sampling method which down samples the instances on basis of gradients. As we know instances with small gradients are well trained (small training error) and those with large gradients are under trained.  <br />

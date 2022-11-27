@@ -113,3 +113,8 @@ and build the tree based on the newest residuals until  you have reach the small
 2)however since we are focusing on classification we will use difffernt similarity score formula <br />
 ![image](https://user-images.githubusercontent.com/79073189/204122822-3c03b137-e69c-434e-9824-d51dbc67b10a.png) <br />
 (sum of the residual)squared / sum (previously predicted probability X (1-previous probability)+lambda(for regularization) <br />
+3)and whoever got the highest gain value will win <br />
+4)for pruning in classication we use something called **cover** and the formula is cover=sum (previously predicted probability X (1-previous probability) <br />
+![image](https://user-images.githubusercontent.com/79073189/204123390-452f3981-15c3-4fce-85e9-523bb8b69fcc.png) <br /> and then you have to give threshold value for cover so anything go beyond that should revome that leaf and put all the values in root  so the cover default value is 1 
+
+

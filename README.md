@@ -124,4 +124,4 @@ calculating something called **cover** and the formula is cover=sum (previously 
 when lamda > 0  Thus, A (lambda), the Regularization Parame reduces the prediction sensitivity to isolated
 observations.<br />
 7)now use th output value for prediction value is average prediction +( learning rate X output value ) note :- if you have probability value then just change to log of the odds values 
-
+8)now whatever will be the outcome build that tree  and make tree until the residuals are smaller and smaller

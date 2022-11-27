@@ -14,7 +14,7 @@ deterministic strategy in boosting we have techique such as adaboost, gradien6t 
 ![image](https://user-images.githubusercontent.com/79073189/204089942-2806ccf0-9d1c-45f5-9aba-210be0dac855.png) <br />
 
 **Stacking:** that often considers heterogeneous weak learners, learns them in parallel and combınes
-them by training a meta-model to output a prediction based on the different weak models predictions <br /> <br />
+them by training a meta-model to output a prediction based on the different weak models predictions <br /> <br /> 
 ![image](https://user-images.githubusercontent.com/79073189/204089997-7067fe78-4d78-4f88-bc0b-b8ac1cf68848.png)
 <br />
 **Bagging**

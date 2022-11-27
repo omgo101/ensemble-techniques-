@@ -125,3 +125,5 @@ when lamda > 0  Thus, A (lambda), the Regularization Parame reduces the predicti
 observations.<br />
 7)now use th output value for prediction value is average prediction +( learning rate X output value ) note :- if you have probability value then just change to log of the odds values 
 8)now whatever will be the outcome build that tree  and make tree until the residuals are smaller and smaller
+#### Light gbm
+https://lightgbm.readthedocs.io/en/v3.3.2/

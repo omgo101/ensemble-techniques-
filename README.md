@@ -119,4 +119,9 @@ calculating something called **cover** and the formula is cover=sum (previously 
 ![image](https://user-images.githubusercontent.com/79073189/204123390-452f3981-15c3-4fce-85e9-523bb8b69fcc.png) <br /> and then you have to give threshold value for cover so anything go beyond that should revome that leaf and put all the values in root  so the cover default value is 1  <br />
 5)now for pruning the tree we do by calculating the difference between the **gain** associated the lowest branch  <br />
 ![image](https://user-images.githubusercontent.com/79073189/204141664-38c1aa70-84eb-47e1-9f31-42cc139cdda4.png) <br />
+6)for the output value the formula is <br />
+![image](https://user-images.githubusercontent.com/79073189/204141829-4715d874-c729-48a0-bd54-c9edb540ce02.png) <br />
+when lamda > 0  Thus, A (lambda), the Regularization Parame reduces the prediction sensitivity to isolated
+observations.<br />
+7)now use th output value for prediction value is average prediction +( learning rate X output value ) note :- if you have probability value then just change to log of the odds values 
 

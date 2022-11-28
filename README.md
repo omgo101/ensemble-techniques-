@@ -48,7 +48,8 @@ Ensemble learning works well when different models make independent mistakes i.e
 before going to adaboost lets know about **stump** its contains only node and two leaves (not great for classification) <br />
 ![image](https://user-images.githubusercontent.com/79073189/201112195-0dd82b7f-a800-43eb-b91d-9bb01e5a5467.png)
 in random forest all decision tree has equal important means there is no weight in that but not in forest for stumps in adaboost  <br />
-in random forest all decision tree are independent to each other inforest for stumps in adaboost should be in order the first stump is influence by other stumps is made and so on
+in random forest all decision tree are independent to each other inforest for stumps in adaboost should be in order the first stump is influence by other stumps is made and so on  <br />
+https://www.kaggle.com/code/funxexcel/titanic-basic-solution-using-adaboost
 ### Gradient Boost <br />
 lets understand the difference between adaboost and gradient boost  <br />
 1)in adaboost weights are increase means updated but in gradient boost optimizing the loss fuction <br />
